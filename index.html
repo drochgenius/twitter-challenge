@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>AppDirect Twitter Challenge</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <h1>AppDirect Twitter Challenge <span class="toggle-settings glyphicon glyphicon-cog" aria-hidden="true"></span></h1>
+    </nav>
+    
+    <!-- This section if for the application settings pane -->
+    <section>
+        <div class="settings">
+            <label class="control-label" for="theme">Theme</label>
+            <div class="btn-group" role="group" aria-label="theme">
+                <button id="theme-primary" type="button" class="btn btn-default">Ocean</button>
+                <button id="theme-info" type="button" class="btn btn-default">Sky</button>
+                <button id="theme-danger" type="button" class="btn btn-default">Pink</button>
+            </div>
+            <label class="control-label" for="tweet-count">Number of tweets</label>
+            <div class="btn-group" role="group" aria-label="tweet-count">
+                <button id="count-1" type="button" class="btn btn-default">1</button>
+                <button id="count-5" type="button" class="btn btn-default">5</button>
+                <button id="count-10" type="button" class="btn btn-default">10</button>
+                <button id="count-20" type="button" class="btn btn-default">20</button>
+                <button id="count-30" type="button" class="btn btn-default">30</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- This section is for the 3 columns of tweets -->
+    <section class="layout">
+        <div class="row">
+            <div id="col0" class="col-sm-4" draggable="true"></div>
+            <div id="col1" class="col-sm-4" draggable="true"></div>
+            <div id="col2" class="col-sm-4" draggable="true"></div>
+        </div>
+    </section>
+
+    <!-- Load the javascript bundled application -->
+    <script src='build/application.js'></script>
+</body>
+
+</html>

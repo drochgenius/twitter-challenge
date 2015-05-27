@@ -1,0 +1,56 @@
+nav {
+	margin-bottom: 2em;
+}
+
+body {
+	margin: 10px;
+}
+
+.settings {
+	display: none;
+	margin-bottom: 2em;
+}
+
+/*
+.layout {
+	clear: both;
+}*/
+
+.toggle-settings {
+	float: right;
+}
+
+span.glyphicon-cog {
+    font-size: 0.75em;
+    margin-right: 0.5em;
+}
+
+.twitter-user {
+	font-size: 1.5em;
+	margin-left: 1em;
+}
+
+.control-label {
+	margin-left: 2em;
+}
+
+.col-sm-4.over .panel {
+ cursor: hand;
+}
+
+.col-sm-4.over .panel-heading {
+ 	background-color: white;
+}
+
+.col-sm-4.over .panel-heading .twitter-user {
+ 	color: black;
+}
+
+.col-sm-4 .panel:hover {
+	cursor: move;
+}
+
+button.button-selected {
+	background-color: #e6e6e6;
+	color: #333;
+}

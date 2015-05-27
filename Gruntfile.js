@@ -32,13 +32,6 @@ module.exports = function(grunt) {
 				dest: 'build/bundle.min.js'
 			}
 		},
-		less: {
-			compile: {
-				files: {
-					"css/style.css": "less/*.less"
-				}
-			}
-		},
 		clean: {
 			build: ['build']
 		},
@@ -58,7 +51,7 @@ module.exports = function(grunt) {
 		express: {
 			all: {
 				options: {
-					bases: ['D:\\AppDirect\\appdirect'],
+					bases: ['D:\\AppDirect\\twitter-challenge'],
 					port: 8080,
 					hostname: "0.0.0.0",
 					livereload: true
@@ -70,8 +63,8 @@ module.exports = function(grunt) {
 		// https://github.com/gruntjs/grunt-contrib-watch
 		watch: {
 			app: {
-				files: ['app/**/*.js', 'app/**/*.mu'],
-				tasks: ['browserify'],
+				files: ['app/**/*.js', 'app/**/*.mu', 'sass/*.sass'],
+				tasks: ['build'],
 				options: {
 					interrupt: true
 				}
@@ -90,7 +83,6 @@ module.exports = function(grunt) {
 
 	// Tasks
 	grunt.registerTask('lint', ['jshint']);
-	grunt.registerTask('less', ['less']);
 	grunt.registerTask('build', ['clean', 'browserify:debug']);
 	grunt.registerTask('default', ['build', 'watch:app']);
 };

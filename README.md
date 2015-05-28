@@ -1,1 +1,7 @@
-# twitter-challenge
+# AppDirect Twitter Challenge
+
+## Installation
+
+npm install
+
+

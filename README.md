@@ -14,6 +14,7 @@ The PHP proxy server I used is taken from https://github.com/themattharris/tmhOA
 - Columns can be moved via drag and drop.
 - Settings pane is accessible through the gear icon on the top right of the page.
 - In the settings, user can choose among 3 different color themes.
+- Settings are persisted through HTML5 Local Storage.
 - User can also choose how many tweets to display in the columns.
 
 ## Installation

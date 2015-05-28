@@ -4,6 +4,7 @@
 Implementation of the AppDirect Twitter Challenge with BackboneJS.
 Packaging is managed with NPM.
 It uses a PHP proxy to connect to the Twitter REST API 1.1 via OAuth.
+The PHP proxy server I used is taken from https://github.com/themattharris/tmhOAuth
 
 ## Features
 

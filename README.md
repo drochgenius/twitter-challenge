@@ -8,6 +8,7 @@ It uses a PHP proxy to connect to the Twitter REST API 1.1 via OAuth.
 ## Features
 
 - Tweets from @AppDirect, @laughingsquid, and @techcrunch are listed in a 3-columns layout.
+- The tweets are read via the Twitter REST API 1.1.
 - The layout is flexible and auto fits 100% of the page width.
 - Columns can be moved via drag and drop.
 - Settings pane is accessible through the gear icon on the top right of the page.
